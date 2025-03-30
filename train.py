@@ -64,7 +64,7 @@ def set_loader(config, mode):
 
     Args:
         config (argparse.Namespace): Configuration options.
-        mode (str): The mode e.g., 'train' or 'validation'.
+        mode (str): The mode e.g., 'train' or 'val'.
 
     Returns:
         torch.utils.data.DataLoader: A configured DataLoader.
@@ -200,7 +200,7 @@ def main():
     model_path = BASE_DIR / 'saved_models'
     
     train_loader = set_loader(config, mode='train')
-    val_loader = set_loader(config, mode='test')
+    val_loader = set_loader(config, mode='val')
 
     model, criterion = set_config(config)
     optimizer = torch.optim.SGD(model.parameters(),
