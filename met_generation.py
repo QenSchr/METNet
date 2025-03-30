@@ -307,9 +307,7 @@ def create_h5(path, file, config):
     
 def main():
     config = parse_option()
-    from pathlib import Path
-    BASE_DIR = Path(__file__).resolve().parent
-
+    
     raw_data_dir = BASE_DIR / 'raw_data' / config.mode
     data_dir = BASE_DIR / 'data' / config.mode
 
