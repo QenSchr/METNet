@@ -27,7 +27,7 @@ The SUM data can be downloaded from [SUM](https://3d.bk.tudelft.nl/projects/mesh
 
 ```bash
 python met_generation.py --mode train --data_usage 0.1 # Percentage of training data to be used. 0.1 corresponds to 10%.
-python met_generation.py --mode val
+python met_generation.py --mode validate
 python met_generation.py --mode test
 ```
 
